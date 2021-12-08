@@ -8,10 +8,10 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
-dbIP = '34.135.146.254'
-dbUser = "root"
-dbPass = "nehamohamedkevin"
-dbName = 'illiniLearn'
+dbIP = ''
+dbUser = ""
+dbPass = ""
+dbName = ''
 
 # connection = mysql.connector.connect(host = dbIP, user = dbUser, password = dbPass, database = dbName)
 
