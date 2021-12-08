@@ -18,11 +18,10 @@ function sm2(answer_history, a = 6.0, b = -0.8, c = 0.28, d = 0.02, theta = 0.2)
 // performanceRating: a float from [0.0, 1.0] indicating the student's performance in their recollection, normalized
 // daysBetweenReviews: days until it is supposed to be shown again
 // dateLastReviews: last time the user saw the card
-// difficulty: current difficuly of the item based on student's answer history 
+// difficulty: current difficuly of the item based on student's answer history
 // inspired by: https://www.blueraja.com/blog/477/a-better-spaced-repetition-learning-algorithm-sm2
 
 function sm2Modified(performanceRating, daysBetweenReviews, dateLastReviewed, difficulty) {
-
     let percentOverdue = 1.0
     if (performanceRating >= 0.6) {
         percentOverdue = Math.min(2.0, (new Date() - dateLastReviewed) / 1000 / 60 / 60 / 24 / daysBetweenReviews)
