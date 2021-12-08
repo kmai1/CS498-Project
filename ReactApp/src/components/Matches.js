@@ -99,7 +99,7 @@ class Create extends React.Component {
         retrievedData["skillId"] = skillId; //never null
         retrievedData["skillValue"] = skillValue; //never null
         if (daysBetweenReview == undefined || daysBetweenReview == 0) {
-          retrievedData["daysBetweenReview"] = 0.1;
+          retrievedData["daysBetweenReview"] = 5;
         } else {
           retrievedData["daysBetweenReview"] = daysBetweenReview;
         }
@@ -207,7 +207,7 @@ class Create extends React.Component {
         retrievedData["skillId"] = skillId; //never null
         retrievedData["skillValue"] = skillValue; //never null
         if (daysBetweenReview == undefined || daysBetweenReview == 0) {
-          retrievedData["daysBetweenReview"] = 0.1;
+          retrievedData["daysBetweenReview"] = 5;
         } else {
           retrievedData["daysBetweenReview"] = daysBetweenReview;
         }
@@ -247,7 +247,7 @@ class Create extends React.Component {
         passThrough["skillValue"] = currSkillValue
         console.log("datsbetweenvalue", passThrough["daysBtwnReview"])
         if (passThrough["daysBtwnReview"] ==  0) {
-          passThrough["daysBtwnReview"] = 0.1
+          passThrough["daysBtwnReview"] = 5
         }
         fetch('http://127.0.0.1:5000/updateWithSM2Values', {
           headers : {
@@ -315,7 +315,7 @@ class Create extends React.Component {
         retrievedData["skillId"] = skillId; //never null
         retrievedData["skillValue"] = skillValue; //never null
         if (daysBetweenReview == undefined || daysBetweenReview == 0) {
-          retrievedData["daysBetweenReview"] = 0.1;
+          retrievedData["daysBetweenReview"] = 5;
         } else {
           retrievedData["daysBetweenReview"] = daysBetweenReview;
         }
@@ -355,7 +355,7 @@ class Create extends React.Component {
         passThrough["skillValue"] = currSkillValue
         console.log("datsbetweenvalue", passThrough["daysBtwnReview"])
         if (passThrough["daysBtwnReview"] ==  0) {
-          passThrough["daysBtwnReview"] = 0.1
+          passThrough["daysBtwnReview"] = 5
         }
         fetch('http://127.0.0.1:5000/updateWithSM2Values', {
           headers : {
@@ -423,7 +423,7 @@ class Create extends React.Component {
         retrievedData["skillId"] = skillId; //never null
         retrievedData["skillValue"] = skillValue; //never null
         if (daysBetweenReview == undefined || daysBetweenReview == 0) {
-          retrievedData["daysBetweenReview"] = 0.1;
+          retrievedData["daysBetweenReview"] = 5;
         } else {
           retrievedData["daysBetweenReview"] = daysBetweenReview;
         }
@@ -463,7 +463,7 @@ class Create extends React.Component {
         passThrough["skillValue"] = currSkillValue
         console.log("datsbetweenvalue", passThrough["daysBtwnReview"])
         if (passThrough["daysBtwnReview"] ==  0) {
-          passThrough["daysBtwnReview"] = 0.1
+          passThrough["daysBtwnReview"] = 5
         }
         fetch('http://127.0.0.1:5000/updateWithSM2Values', {
           headers : {
