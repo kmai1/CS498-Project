@@ -56,8 +56,6 @@ def pullSkillDataViaValue():
         database = dbName
     )
     data = request.get_json()
-    print("skilldataviavalue")
-    print("printed what i got from front", data)
     skillValue = data["skillValue"][0]
     connection.reconnect()
     cursor = connection.cursor(buffered = True)
@@ -76,8 +74,6 @@ def updateWithSM2Values():
     data = request.get_json()
     connection.reconnect()
     cursor = connection.cursor(buffered = True)
-    print("updateValues")
-    print(data)
     userId = 1
     skillValue = data["skillValue"][0]
     updatePercentOverdue = data["percentOverdue"]
@@ -91,8 +87,6 @@ def updateWithSM2Values():
                                     dateLastReviewed = \"{}\", difficulty = {}
                                     where userId = {} and skillValue = \"{}\"
                 '''.format(updatePercentOverdue, updateDaysBtwnReview,updateDateLastReviewed,updateDifficulty, userId, skillValue)
-    # updateQuery = "select * from skills"
-    print(updateQuery)
     cursor.execute(updateQuery)
     connection.commit()
     if True:

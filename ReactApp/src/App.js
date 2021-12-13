@@ -14,35 +14,6 @@ class App extends React.Component {
     }
   }
   render() {
-    if (this.state.name) {
-      return (
-        <div className="App container py-3">
-          <Navbar collapseOnSelect bg="light" expand="md" className="mb-3">
-            <LinkContainer to="/">
-              <Navbar.Brand className="font-weight-bold text-muted">
-                498 Project
-              </Navbar.Brand>
-            </LinkContainer>
-          <Navbar.Toggle />
-
-          <Navbar.Collapse className="justify-content-end">
-
-            <Nav activeKey={window.location.pathname}>
-              <LinkContainer to="/edit">
-                <Nav.Link href='#link'>Edit Profile</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/logout">
-                <Nav.Link></Nav.Link>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-        <Routes />
-        </div>
-
-
-      );
-    } else {
     return (
       <div className="App container py-3">
 
@@ -69,8 +40,9 @@ class App extends React.Component {
       </div>
 
 
-    ); }
+    );
   }
 }
+
 
 export default App;
